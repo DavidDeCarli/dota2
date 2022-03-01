@@ -8,85 +8,87 @@
 	<title>Contacto</title>
 </head>
 <body>
-	<header class="header">
-        <a href="https://www.dota2.com/home" target="_blank"><img src="../images/dota-2-logo.png"
-                alt="dota_2"></a>
-        <nav>
-            <ul>
-                <li><a href="../index.html">home</a></li>
-                <li><a href="items.html">items</a></li>
-                <li><a href="tienda.html">tienda</a></li>
-                <li><a href="contacto.html">contacto</a></li>
-                <li><a href="aboutus.html">about us</a></li>
-            </ul>
-        </nav>
-    </header>
-	<main>
-		<section class="contacto">
-			<h1>CONTACTO</h1>
-				<form action="#">
-					<label for="text">Decime tu nombre
-						<input type="text" placeholder="Nombre"></label>
-					<br>
-					<label for="email">Decime tu email:
-						<input type="email" placeholder="aaa@gmail.com" name="email"><br>
-					</label>
-					<label for="Comentario"> Comentario:<br>
-						<textarea placeholder="Deja tu comentario..."></textarea>
-					</label>
-					<br>
-					<label for="number">Decime tu edad
+	<div class="gridContainer">
+		<header class="header">
+			<a href="https://www.dota2.com/home" target="_blank"><img src="../images/dota-2-logo.png"
+					alt="dota_2"></a>
+			<nav>
+				<ul>
+					<li><a href="../index.html">home</a></li>
+					<li><a href="items.html">items</a></li>
+					<li><a href="tienda.html">tienda</a></li>
+					<li><a href="contacto.html">contacto</a></li>
+					<li><a href="aboutus.html">about us</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main class="main">
+			<section class="contacto sectionOne">
+				<h1>CONTACTO</h1>
+					<form action="#">
+						<label for="text">Decime tu nombre
+							<input type="text" placeholder="Nombre"></label>
 						<br>
-						<input type="number" placeholder="Indicanos tu edad">
-					<br>
-					</label>
-					<div>
-						<p>Que bando preferis:</p>
-						<div>Dire
-							<input type="radio" name="lado" value="Dire">
+						<label for="email">Decime tu email:
+							<input type="email" placeholder="aaa@gmail.com" name="email"><br>
+						</label>
+						<label for="Comentario"> Comentario:<br>
+							<textarea placeholder="Deja tu comentario..."></textarea>
+						</label>
+						<br>
+						<label for="number">Decime tu edad
+							<br>
+							<input type="number" placeholder="Indicanos tu edad">
+						<br>
+						</label>
+						<div>
+							<p>Que bando preferis:</p>
+							<div>Dire
+								<input type="radio" name="lado" value="Dire">
+							</div>
+							<div>Radiant
+								<input type="radio" name="lado" value="Radiant">
+							</div>
 						</div>
-						<div>Radiant
-							<input type="radio" name="lado" value="Radiant">
+						<div>
+							<p>Que rol te gusta más?</p>
+							<select name="rol" id="rol"> 
+								<option value="carry">Carry</option>
+								<option value="mid">Mid</option>
+								<option value="tank">Tank</option>
+								<option value="roaming">Roaming</option>
+								<option value="support">Support</option>
+							</select>
 						</div>
-					</div>
-					<div>
-						<p>Que rol te gusta más?</p>
-						<select name="rol" id="rol"> 
-							<option value="carry">Carry</option>
-							<option value="mid">Mid</option>
-							<option value="tank">Tank</option>
-							<option value="roaming">Roaming</option>
-							<option value="support">Support</option>
-						</select>
-					</div>
-					<br>
-					<br>
-					<div>
-						<p>Queres recibir info sobre nosotros?</p> 
-						<input type="checkbox" name="acepta" value="1">					
-						<input type="submit" value="Enviar">
-						<input type="reset" value="Resetear">
-					</div>
-				</form>
-		</section>
-	</main>
-    <footer class="footer">
-        <div class="footerLogo">
-            <a href="https://www.valvesoftware.com/en/about" target="_blank"><img src="../images/valve.png"
-                    alt="dota_2"></a>
-            <p>Dota y el logotipo de Dota son marcas comerciales y/o marcas comerciales registradas de
-                Valve Corporation. 2021 Valve Corporation, todos los derechos reservados.</p>
-        </div>
-        <div class="footerRedes">
-            <a href="https://www.instagram.com/?hl=es-la" target="_blank"><img
-                src="../images/instragram-icon.png" alt="instragram-icon"></a>
-            <a href="https://www.facebook.com/" target="_blank"><img
-                src="../images/facebook-icon.png" alt="facebook-icon"></a>
-            <a href="https://twitter.com/?lang=es" target="_blank"><img
-                src="../images/twitter-icon.png" alt="twitter-icon"></a>
-            <a href="https://www.twitch.tv/" target="_blank"><img
-                src="../images/twitch-icon.png" alt="twitch-icon"></a>
-        </div>
-    </footer>
+						<br>
+						<br>
+						<div>
+							<p>Queres recibir info sobre nosotros?</p> 
+							<input type="checkbox" name="acepta" value="1">					
+							<input type="submit" value="Enviar">
+							<input type="reset" value="Resetear">
+						</div>
+					</form>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footerLogo">
+				<a href="https://www.valvesoftware.com/en/about" target="_blank"><img src="../images/valve.png"
+						alt="dota_2"></a>
+				<p>Dota y el logotipo de Dota son marcas comerciales y/o marcas comerciales registradas de
+					Valve Corporation. 2021 Valve Corporation, todos los derechos reservados.</p>
+			</div>
+			<div class="footerRedes">
+				<a href="https://www.instagram.com/?hl=es-la" target="_blank"><img
+					src="../images/instragram-icon.png" alt="instragram-icon"></a>
+				<a href="https://www.facebook.com/" target="_blank"><img
+					src="../images/facebook-icon.png" alt="facebook-icon"></a>
+				<a href="https://twitter.com/?lang=es" target="_blank"><img
+					src="../images/twitter-icon.png" alt="twitter-icon"></a>
+				<a href="https://www.twitch.tv/" target="_blank"><img
+					src="../images/twitch-icon.png" alt="twitch-icon"></a>
+			</div>
+		</footer>
+	</div>
 </body>
 </html>

@@ -27,43 +27,57 @@ section img{
     width: 50%;
     margin: 10px auto;
 }
+.gridContainer {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 0.2fr 3fr 0.2fr; 
+    gap: 4px 0px; 
+    grid-template-areas: 
+      "header header"
+      "main main"
+      "footer footer"; 
+}
 /* ------------ HEADER Y NAV --------------- */
 .header{
     background-color: #fa8072;
     display: flex;
     justify-content: space-between 5px;
     align-items: center;
+    grid-area: header;
 }
 .header a img{
     height: 40%;
     width: 40%;
     margin: 10px auto;
 }
-nav ul{
+.header nav ul{
     display: flex;
     align-items: center;
 }
-nav ul li{
+.header nav ul li{
     padding-left: 50px;
     padding-right: 30px;
     text-transform: uppercase;
     list-style: none;
 }
-nav ul li a{
+.header nav ul li a{
     text-decoration: none;
     color: blue;
 }
 /* ------------ MAIN --------------- */
+.main{
+    grid-area: main;
+}
 /* INDEX */
-.sectionIndex div{
+.sectionIndexOne div{
     display: flex;
     justify-content: space-around;
 }
-.sectionIndex div img{
+.sectionIndexOne div img{
     width: 300%;
     margin: 20px 10px 10px 20px;
 }
-.sectionIndex div p{
+.sectionIndexOne div p{
     text-align: left;
     margin: 30px 20px 0 5px;
     font-size: 20px;
@@ -111,8 +125,8 @@ section ul{
     padding: 5px 10px;
 }
 .sectionAboutus ul li a img{
-    width: 70%;
-    height: 70%;
+    width: 30%;
+    height: 30%;
 }
 .sectionAboutus ul li h2{
     margin-bottom: 10px;
@@ -125,6 +139,7 @@ section ul{
     display: flex; 
     justify-content: space-around;
     align-items: center;
+    grid-area: footer;
 }
 .footerLogo{
     display: flex;
@@ -144,4 +159,51 @@ section ul{
 .footerRedes a img{
     width: 40px;
     margin: 40px;
+}
+/* ------------ MEDIA QUERIES --------------- */
+@media screen and (max-width: 1000px){
+    .gridContainer {
+        grid-template-rows: 0.2fr 5fr 0.5fr; 
+    }
+    .header{
+        flex-direction: column;
+    } 
+    .header a img{
+        height: 200px;
+        width: 100%;
+        margin: 10px auto;
+    }
+    .header nav ul{
+        align-items: center;
+        margin-bottom: 5px;
+    }
+    .sectionIndexOne div{
+        flex-direction: column;
+    }
+    .sectionIndexOne div img{
+        width: 30%;
+        margin: 10px auto;
+    }
+    .footer{
+        flex-direction: column;
+    }
+}
+    .sectionAboutus ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .sectionAboutus ul li{
+        flex-direction: column;
+    }
+@media screen and (max-width: 650px){
+    .gridContainer {
+        grid-template-rows: 0.2fr 4fr 0.5fr; 
+    }
+    .header nav ul{
+        flex-direction: column;
+        padding-bottom: 5px;
+    }
+    .header a img{
+        height: 150px;
+    }
 }
