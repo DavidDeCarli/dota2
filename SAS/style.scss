@@ -5,8 +5,8 @@
     box-sizing: border-box;
 }
 body{
-    background-color: pink;
-    color: black;
+    background-color: black;
+    color: rgb(252, 242, 228);
     font-family: Arial, Helvetica, sans-serif;
 }
 img{
@@ -30,7 +30,7 @@ section img{
 .gridContainer {
     display: grid; 
     grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 0.2fr 4fr 0.2fr; 
+    grid-template-rows: 0.1fr 5fr 0.2fr; 
     gap: 4px 0px; 
     grid-template-areas: 
     "header header"
@@ -39,36 +39,29 @@ section img{
 }
 /* ------------ HEADER Y NAV --------------- */
 .header{
-    background-color: #fa8072;
-    display: flex;
-    justify-content: space-between 5px;
-    align-items: center;
     grid-area: header;
 }
-.header a img{
-    height: 40%;
-    width: 40%;
-    margin: 10px auto;
+.navbar{
+    margin: auto 30px;
 }
-.header nav ul{
-    display: flex;
-    align-items: center;
+.header a img{
+    height: 20%;
+    width: 20%;
 }
 .header nav ul li{
     padding-left: 50px;
     padding-right: 30px;
     text-transform: uppercase;
-    list-style: none;
+    font-weight: 500;
 }
-.header nav ul li a{
-    text-decoration: none;
-    color: blue;
+nav.navbar{
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: #fadecfee;
+    font-family: "Radiance","Noto Sans",sans-serif;
 }
 .header nav ul li a:hover{
     background-color: #fc7363;
-}
-.header nav ul li a:active{
-    color: red;
 }
 /* ------------ MAIN --------------- */
 .main{
@@ -101,6 +94,15 @@ section img{
     text-transform: uppercase;
     text-shadow: 0px 0px 20px #000;
 }
+.titulo{
+    font-size: 50px;
+    font-family: "Reaver",serif;
+    letter-spacing: 5px;
+    font-weight: 700;
+    color: #fadecfee;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 20px #000;
+}
 .sectionIndexOne h2{
     font-size: 50px;
     font-family: "Reaver",serif;
@@ -110,25 +112,32 @@ section img{
     text-transform: uppercase;
     text-shadow: 0px 0px 20px #000;
 }
-.sectionIndexOne h5{
+.sectionIndexOne h5, .sectionIndexTwo h5, .sectionIndexThree h5{
     font-size: 40px;
     font-family: "Reaver",serif;
     letter-spacing: 5px;
     font-weight: 600;
-    color: #fadecfee;
+    color: #c5a99aee;
     text-transform: uppercase;
     text-shadow: 0px 0px 20px #000;
 }
-.sectionIndexOne p{
+.sectionIndexOne p, .sectionIndexTwo p{
     font-size: 26px;
     font-family: "Radiance","Noto Sans",sans-serif;
     color: #fadecfee;
 }
-.sectionIndexOne div p{
+.sectionIndexOne div p, .sectionIndexTwo div p{
     text-align: left;
     margin: 30px 20px 0 5px;
     font-size: 20px;
     
+}
+.sectionIndexTwo{
+    background-image: url("/images/dota2-heroes.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
 }
 .sectionIndexTwo h3{
     font-size: 40px;
@@ -146,9 +155,24 @@ section img{
     font-weight: 600;
     text-transform: uppercase;
 }
+.sectionIndexThree{
+    background-image: url("/images/prueba.jpg");
+    margin: 50px 20px;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.cardSectionIndexThree, .cardSectionIndexThree .titulo{
+    width: 50rem; 
+    margin: auto auto;
+    text-align: left;
+    background-color: transparent;
+    border: 0px;
+}
 .list-group-item{
-    background-color: rgb(247, 178, 190);
-    margin: auto 100px;
+    background-color: rgb(150, 150, 150);
+    margin: auto 10%;
 }
 .sectionLista{
     display: flex;
@@ -168,16 +192,70 @@ section img{
 .pIndex{
     margin: auto 100px;
 }
-/* ITEMS */
+/* ITEMS y SKILLS */
+.items div h1{
+    font-size: 60px;
+    font-family: "Reaver",serif;
+    letter-spacing: 5px;
+    font-weight: 800;
+    color: #fadecfee;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 20px #000;
+}
+.items h2{
+    font-size: 40px;
+    font-family: "Reaver",serif;
+    letter-spacing: 4px;
+    font-weight: 600;
+    color: #fadecfee;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 20px #000;
+}
+.items h3{
+    font-size: 30px;
+    font-family: "Reaver",serif;
+    letter-spacing: 3px;
+    font-weight: 500;
+    color: #fadecfee;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 20px #000;
+}
 .items ul{
     columns: 2;
-    list-style-type: square;
+    list-style-type: none;
     margin-left: 30%;
+}
+.items ul li a{
+    text-decoration: none;
+    color: #fadecfee;
+    font-family: "Reaver",serif;
+}
+.items ul li a:hover{
+    background-color: #fc7363;
+}
+.items ul li a:visited{
+    color: purple;
+}
+.items p{
+    margin: auto 50px;
+}
+.separadorGrande{
+    width: 800px;
+    margin: 20px auto;
+    color: pink;
+}
+.separadorChico{
+    width: 200px;
+    margin: 20px auto;
+    color: pink;
 }
 /* TIENDA */
 .table{
     display: flex;
     justify-content: center;
+}
+.table tr{
+    background-color: rgb(150, 150, 150);
 }
 .table tr td a:active{
     color: blue;
@@ -243,6 +321,9 @@ section img{
 .videoAboutUs div h2,p{
     flex-direction: column;
 }
+.videoAboutUs div a{
+    text-decoration: none;
+}
 /* ------------ FOOTER --------------- */
 .footer{
     width: 100%;
@@ -258,8 +339,8 @@ section img{
     flex-direction: column;
 }
 .footerLogo img{
-    height: 100px;
-    width: 350px;
+    height: 60px;
+    width: 200px;
     margin: auto;
 }
 .footerLogo p{
@@ -269,15 +350,15 @@ section img{
     display: flex;
 }
 .footerRedes a img{
-    width: 40px;
+    width: 35px;
     margin: 40px;
 }
 /* ------------ ANIMACIONES y TRANSFORMACIONES --------------- */
-.sectionIndexTwo div div img{
+.sectionLista div img{
     -webkit-transition: 0.5s linear;
     transition: 0.5s linear;
 }
-.sectionIndexTwo div div img:hover{
+.sectionLista div img:hover{
     -webkit-transform: scale(1.3);
     transform: scale(1.3);
 }
@@ -303,7 +384,7 @@ section img{
 }
 .rotate:hover{
     animation-name: rotate;
-    animation-duration: 5s;
+    animation-duration: 3s;
 }
 @keyframes rotate{
     25%{transform: skewX(10deg);}
@@ -342,25 +423,32 @@ section img{
 /* ------------ MEDIA QUERIES --------------- */
 @media screen and (max-width: 1000px){
     .gridContainer {
-        grid-template-rows: 0.2fr 5fr 0.5fr; 
+        grid-template-rows: 0.2fr 6fr 0.6fr; 
     }
-    .header{
+    .navbar-nav{
+        display: flex;
         flex-direction: column;
-    } 
-    .header a img{
-        height: 200px;
-        width: 100%;
-        margin: 10px auto;
     }
-    .header nav ul{
-        align-items: center;
-        margin-bottom: 5px;
+    .container-fluid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5px;
     }
     .sectionIndexOne div{
         flex-direction: column;
     }
-    .sectionIndexOne div img{
-        width: 30%;
+    .sectionIndexOne div img, .sectionIndexTwo div img{
+        width: 70%;
+        margin: 10px auto;
+    }
+    .videoAboutUs{
+        display: block;
+    }
+    .videoAboutUs video{
+        display: flex;
+        justify-content: center;
+        width: 300px;
         margin: 10px auto;
     }
     .footer{
@@ -379,7 +467,7 @@ section img{
         line-height: 0px;
     }
 }
-@media screen and (max-width: 804px) {
+@media screen and (max-width: 850px) {
     .card{
         width: 30rem;
     }
@@ -405,48 +493,23 @@ section img{
         font-size: 20px;
     }
 }
-@media screen and (max-width: 650px){
+@media screen and (max-width: 700px){
     .gridContainer {
-        grid-template-rows: 0.2fr 4fr 0.5fr; 
-    }
-    .header nav ul{
-        flex-direction: column;
-        padding-bottom: 5px;
-    }
-    .header a img{
-        height: 150px;
+        grid-template-rows: 0.2fr 7fr 0.5fr; 
     }
     .sectionIndexOne h1{
         font-size: 30px;
         letter-spacing: 2px;
         font-weight: 300;
     }
-    
 }
 @media screen and (max-width: 534px){
     .gridContainer {
-        grid-template-rows: 0.2fr 4fr 0.6fr; 
-    }
-    .header nav ul{
-        flex-direction: column;
-        padding-bottom: 5px;
-    }
-    .header a img{
-        height: 120px;
-    }
-    .videoAboutUs{
-        display: block;
-        justify-content: space-around;
-    }
-    .videoAboutUs video{
-        width: 300px;
+        grid-template-rows: 0.2fr 8fr 0.6fr; 
     }
 }
 @media screen and (max-width: 496px){
     .gridContainer {
-        grid-template-rows: 0.3fr 8fr 0.6fr; 
-    }
-    .footerLogo p{
-        width: 300px;
+        grid-template-rows: 0.3fr 9fr 0.6fr; 
     }
 }

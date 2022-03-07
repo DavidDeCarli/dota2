@@ -10,17 +10,36 @@
 </head>
 <body>
     <div class="gridContainer">
-        <header class="header">
-            <a href="https://www.dota2.com/home" target="_blank"><img src="./images/dota-2-logo.png"
-                    alt="dota_2"></a>
-            <nav>
-                <ul>
-                    <li><a href="index.html">home</a></li>
-                    <li><a href="pages/items-skills.html">items & Skills</a></li>
-                    <li><a href="pages/tienda.html">tienda</a></li>
-                    <li><a href="pages/contacto.html">contacto</a></li>
-                    <li><a href="pages/aboutus.html">about us</a></li>
-                </ul>
+        <header class="header navbar-dark bg-dark">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="https://www.dota2.com/home" target="_blank">
+                        <img src="./images/dota-2-logo2.png" alt="" width="30" height="24" class="d-inline-block">
+                        DOTA 2
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="pages/items-skills.html">items-skills</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="pages/tienda.html">tienda</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="pages/contacto.html">contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="pages/aboutus.html">about us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </header>
         <main class="main">
@@ -38,36 +57,25 @@
             </section>
             <section class="sectionIndexTwo">
                 <h3>ELIGE A TU HEROE</h3>
-                <img class="translate" src="./images/dota2-heroes.jpg" alt="dota2-heroes">
-                <p class="pIndex">Estrategas de la magia, feroces bestias, astutos pícaros... El conjunto de héroes de Dota 2 es enorme y
-                    de una diversidad ilimitada. Lanza increíbles hechizos y devastadoras habilidades definitivas en tu
-                    camino hacia la victoria.</p>
-                    <div class="sectionLista">
-                        <div>
-                            <h4>Fuerza</h4>
-                            <img src="./images/dragon_knight.jpg" alt="dragon_knight"><h5>Dragon Knight</h5>
-                            <img src="./images/earth_spirit.jpg" alt="earth_spirit"><h5>Earth Spirit</h5>
-                            <img src="./images/lycan.jpg" alt="lycan"><h5>Lycan</h5>
-                            <img src="./images/spirit_breaker.jpg" alt="spirit_breaker"><h5>Spirit Breaker</h5>
-                            <img src="./images/pudge.jpg" alt="pudge"><h5>Pudge</h5>
-                        </div>
-                        <div>
-                            <h4>Agilidad</h4>
-                            <img src="./images/anti-mage.jpg" alt="anti-mage"><h5>Anti-Mage</h5>
-                            <img src="./images/shadow_fiend.jpg" alt="shadow_fiend"><h5>Shadow Fiend</h5>
-                            <img src="./images/troll_warlord.jpg" alt="troll_warlord"><h5>Troll Warlord</h5>
-                            <img src="./images/ember_spirit.jpg" alt="ember_spirit"><h5>Ember Spirit</h5>
-                            <img src="./images/faceless_void.jpg" alt="faceless_void"><h5>Faceless Void</h5>
-                        </div>
-                        <div>
-                            <h4>Inteligencia</h4>
-                            <img src="./images/rubick.jpg" alt="rubick"><h5>Rubick</h5>
-                            <img src="./images/warlock.jpg" alt="warlock"><h5>Warlock</h5>
-                            <img src="./images/invoker.jpg" alt="invoker"><h5>Invoker</h5>
-                            <img src="./images/storm_spirit.jpg" alt="storm_spirit"><h5>Storm Spirit</h5>
-                            <img src="./images/necrophos.jpg" alt="necrophos"><h5>Necrophos</h5>
-                        </div>
+                <div class="card">
+                    <img src="./images/dota2-heroes2.jpg" alt="dota2">
+                    <div class="card-body">
+                        <h5 class="card-title translateY">¿A QUIEN VAS A</h5>
+                        <h2 class="card-title translateY titulo">ELEGIR?</h2>
+                        <p class="card-text">Estrategas de la magia, feroces bestias, astutos pícaros... El conjunto de héroes de Dota 2 es enorme y de una diversidad ilimitada. Lanza increíbles hechizos y devastadoras habilidades definitivas en tu camino hacia la victoria.</p>
+                        <a href="https://www.dota2.com/heroes" target="_blank" class="btn btn-primary">VER TODOS LOS HÉROES</a>
                     </div>
+                </div>
+            </section>
+            <section class="sectionIndexThree">
+                <div class="cardSectionIndexThree">
+                    <div class="card-body">
+                        <h5 class="card-title">UNETE A LA</h5>
+                        <h2 class="card-title titulo">BATALLA</h2>
+                        <a href="https://store.steampowered.com/app/570/Dota_2" target="_blank" class="btn btn-primary">JUEGA GRATIS AHORA</a>
+                    </div>
+                </div>
+            </section>
                 <h3>Top 10 héroes más usados en competitivo:</h3>
                 <ol class="list-group list-group-numbered">
                     <li class="list-group-item d-flex justify-content-between align-items-start">
@@ -143,7 +151,7 @@
                 </ol>
             </section>
         </main>
-        <footer class="footer">
+        <footer class="footer navbar-dark bg-dark">
             <div class="footerLogo">
                 <a href="https://www.valvesoftware.com/en/about" target="_blank"><img src="./images/valve.png"
                         alt="dota_2"></a>
@@ -163,5 +171,7 @@
         </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

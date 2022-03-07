@@ -10,17 +10,36 @@
 </head>
 <body>
     <div class="gridContainer">
-        <header class="header">
-            <a href="https://www.dota2.com/home" target="_blank"><img src="../images/dota-2-logo.png"
-                    alt="dota_2"></a>
-            <nav>
-                <ul>
-                    <li><a href="../index.html">home</a></li>
-                    <li><a href="items-skills.html">items & Skills</a></li>
-                    <li><a href="tienda.html">tienda</a></li>
-                    <li><a href="contacto.html">contacto</a></li>
-                    <li><a href="aboutus.html">about us</a></li>
-                </ul>
+        <header class="header navbar-dark bg-dark">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="https://www.dota2.com/home" target="_blank">
+                        <img src="../images/dota-2-logo2.png" alt="" width="30" height="24" class="d-inline-block">
+                        DOTA 2
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="items-skills.html">items-skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="tienda.html">tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contacto.html">contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="aboutus.html">about us</a>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </header>
         <main class="main">
@@ -51,8 +70,8 @@
                 <p>También tenemos algunos juegos nuevos en proceso. Se han anunciado un par, mientras que otros permanecen en secreto.</p>
                 <div class="container videoAboutUs">
                     <div>
-                        <h2>We're just getting started.</h2>
-                        <p>We make all of this stuff collaboratively in Bellevue, Washington, where we combine the resources and talent of a world-class company with the ethos of a small startup. With an engaged and vocal community of partners and players, our products and our company will continue to change and grow in ways we may never have predicted. <a href="https://www.valvesoftware.com/en/">Join us</a>, and help inform what's next.</p>
+                        <h2>Nosotros estamos empezando.</h2>
+                        <p>Hacemos todo esto en colaboración en Bellevue, Washington, donde combinamos los recursos y el talento de una empresa de clase mundial con el espíritu de una pequeña empresa emergente. Con una comunidad comprometida y vocal de socios y jugadores, nuestros productos y nuestra empresa seguirán cambiando y creciendo de formas que quizás nunca hubiéramos previsto. <a href="https://www.valvesoftware.com/en/">Únete a nosotros</a>, y ayuda a informar lo que sigue.</p>
                     </div>
                     <video playsinline="" autoplay="" muted="" loop="" poster="https://cdn.cloudflare.steamstatic.com/valvesoftware/images/videos/hardware-hmd.jpg">
                         <source src="https://cdn.cloudflare.steamstatic.com/valvesoftware/images/videos/hardware-hmd_fullsize.webm" type="video/webm" media="screen and (min-width:800px)">
@@ -63,7 +82,7 @@
                 </div>
             </section>
         </main>
-        <footer class="footer">
+        <footer class="footer navbar-dark bg-dark">
             <div class="footerLogo">
                 <a href="https://www.valvesoftware.com/en/about" target="_blank"><img src="../images/valve.png"
                         alt="dota_2"></a>
@@ -83,5 +102,7 @@
         </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
