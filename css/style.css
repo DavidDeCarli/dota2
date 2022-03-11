@@ -1,26 +1,24 @@
 /* ------------ HEADER Y NAV --------------- */
 .header {
   grid-area: header; }
-  .header a img {
-    height: 20%;
-    width: 20%; }
-  .header nav ul li {
-    padding-left: 50px;
-    padding-right: 30px;
-    text-transform: uppercase;
-    font-weight: 500; }
-    .header nav ul li a:hover {
-      background-color: #ffbc40; }
+  .header .navbar {
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: #fadecfee;
+    font-family: "Radiance","Noto Sans",sans-serif; }
+    .header .navbar a img {
+      height: 20%;
+      width: 20%;
+      margin-left: 20px; }
+    .header .navbar ul li {
+      padding-right: 40px;
+      margin-right: 20px;
+      text-transform: uppercase;
+      font-weight: 500; }
+      .header .navbar ul li a:hover {
+        background-color: #ffbc40; }
 
-.navbar {
-  margin: auto 30px; }
-
-nav.navbar {
-  font-size: 20px;
-  letter-spacing: 3px;
-  color: #fadecfee;
-  font-family: "Radiance","Noto Sans",sans-serif; }
-
+/* variables */
 /* INDEX */
 .sectionIndexOne {
   background-image: url("/images/dota2-mapa.png");
@@ -40,7 +38,7 @@ nav.navbar {
 
 .titulo {
   font-size: 50px;
-  font-family: "Reaver",serif;
+  font-family: "Reaver", serif;
   letter-spacing: 5px;
   font-weight: 700;
   color: #fadecfee;
@@ -49,7 +47,7 @@ nav.navbar {
 
 .sectionIndexOne h2, .sectionIndexTwo h2, .sectionIndexThree h2 {
   font-size: 40px;
-  font-family: "Reaver",serif;
+  font-family: "Reaver", serif;
   letter-spacing: 5px;
   font-weight: 600;
   color: #c5a99aee;
@@ -58,7 +56,7 @@ nav.navbar {
 
 .sectionIndexOne span, .sectionIndexTwo span, .sectionIndexThree span {
   font-size: 50px;
-  font-family: "Reaver",serif;
+  font-family: "Reaver", serif;
   letter-spacing: 5px;
   font-weight: 600;
   color: #fadecfee;
@@ -85,7 +83,7 @@ nav.navbar {
   background-attachment: fixed; }
   .sectionIndexTwo h3 {
     font-size: 42px;
-    font-family: "Reaver",serif;
+    font-family: "Reaver", serif;
     letter-spacing: 3px;
     font-weight: 600;
     color: #ffffffee;
@@ -126,7 +124,7 @@ nav.navbar {
 /* ITEMS y SKILLS */
 .items div h1 {
   font-size: 60px;
-  font-family: "Reaver",serif;
+  font-family: "Reaver", serif;
   letter-spacing: 5px;
   font-weight: 800;
   color: #fadecfee;
@@ -135,7 +133,7 @@ nav.navbar {
 
 .items h2 {
   font-size: 40px;
-  font-family: "Reaver",serif;
+  font-family: "Reaver", serif;
   letter-spacing: 4px;
   font-weight: 600;
   color: #fadecfee;
@@ -144,7 +142,7 @@ nav.navbar {
 
 .items h3 {
   font-size: 30px;
-  font-family: "Reaver",serif;
+  font-family: "Reaver", serif;
   letter-spacing: 3px;
   font-weight: 500;
   color: #fadecfee;
@@ -158,23 +156,21 @@ nav.navbar {
   .items ul li a {
     text-decoration: none;
     color: #fadecfee;
-    font-family: "Reaver",serif; }
+    font-family: "Reaver", serif; }
+    .items ul li a:hover {
+      background-color: #fc7363; }
+    .items ul li a:visited {
+      color: purple; }
 
 .items p {
   margin: auto 50px; }
 
-.items ul li a:hover {
-  background-color: #fc7363; }
-
-.items ul li a:visited {
-  color: purple; }
-
-.separadorGrande {
+.items .separadorGrande {
   width: 800px;
   margin: 20px auto;
   color: pink; }
 
-.separadorChico {
+.items .separadorChico {
   width: 200px;
   margin: 20px auto;
   color: pink; }
@@ -187,19 +183,17 @@ nav.navbar {
     background-color: #969696; }
     .table tr td a {
       color: #ecaf3e; }
-    .table tr td a:active {
-      color: orange; }
-    .table tr td a:visited {
-      color: purple; }
+      .table tr td a:active {
+        color: orange; }
+      .table tr td a:visited {
+        color: purple; }
 
 .tienda p a {
   color: #ecaf3e; }
-
-.tienda p a:active {
-  color: orange; }
-
-.tienda p a:visited {
-  color: purple; }
+  .tienda p a:active {
+    color: orange; }
+  .tienda p a:visited {
+    color: purple; }
 
 /* CONTACTO */
 .contacto {
@@ -236,6 +230,8 @@ nav.navbar {
   .videoAboutUs video {
     width: 500px;
     margin: 20px 10px 10px 20px; }
+  .videoAboutUs div h2, .videoAboutUs div p {
+    flex-direction: column; }
   .videoAboutUs div p {
     text-align: left;
     margin: 30px 20px 0 5px;
@@ -243,8 +239,6 @@ nav.navbar {
   .videoAboutUs div h2 {
     text-align: left;
     margin: 30px 20px 0 5px; }
-  .videoAboutUs div h2, .videoAboutUs p {
-    flex-direction: column; }
   .videoAboutUs div a {
     text-decoration: none;
     color: orange; }
@@ -258,22 +252,20 @@ nav.navbar {
   justify-content: space-around;
   align-items: center;
   grid-area: footer; }
-
-.footerLogo {
-  display: flex;
-  flex-direction: column; }
-  .footerLogo img {
-    height: 60px;
-    width: 200px;
-    margin: auto; }
-  .footerLogo p {
-    width: 500px; }
-
-.footerRedes {
-  display: flex; }
-  .footerRedes a img {
-    width: 35px;
-    margin: 40px; }
+  .footer .footerLogo {
+    display: flex;
+    flex-direction: column; }
+    .footer .footerLogo img {
+      height: 60px;
+      width: 200px;
+      margin: auto; }
+    .footer .footerLogo p {
+      width: 500px; }
+  .footer .footerRedes {
+    display: flex; }
+    .footer .footerRedes a img {
+      width: 35px;
+      margin: 40px; }
 
 * {
   margin: 0;
