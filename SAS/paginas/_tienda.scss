@@ -1,0 +1,32 @@
+/* TIENDA */
+.table{
+    display: flex;
+    justify-content: center;
+    tr{
+        background-color: rgb(150, 150, 150);
+        td{
+            a{
+                color: rgb(236, 175, 62);
+                &:active{
+                    color: orange;
+                }
+                &:visited{
+                    color: purple;
+                }
+            }
+        }
+    }
+}
+.tienda{
+    p{
+        a{
+            color: rgb(236, 175, 62);
+            &:active{
+                color: orange;
+            }
+            &:visited{
+                color: purple;
+            }
+        }
+    }
+}

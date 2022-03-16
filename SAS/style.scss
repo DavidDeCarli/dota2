@@ -1,58 +1,12 @@
-@import "header";
-@import "paginas";
-@import "footer";
-// ------------ ROOT Y GENERALES ---------------
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    background-color: black;
-    color: rgb(252, 242, 228);
-    font-family: Arial, Helvetica, sans-serif;
-}
-img{
-    display: block;
-}
-table{
-    margin: 10px auto;
-}
-h1, h2, h3, p{
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-h1{
-    font-size: 60px;
-    font-family: "Reaver",serif;
-    letter-spacing: 5px;
-    font-weight: 800;
-    color: #fde5d8ee;
-    text-transform: uppercase;
-    text-shadow: 0px 0px 20px #000;
-}
-p, label{
-    font-size: 18px;
-}
-section img{
-    width: 50%;
-    margin: 10px auto;
-}
-.gridContainer {
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 0.1fr 5fr 0.2fr; 
-    gap: 4px 0px; 
-    grid-template-areas: 
-    "header header"
-    "main main"
-    "footer footer"; 
-}
-/* ------------ MAIN --------------- */
-.main{
-    grid-area: main;
-}
+@import "./base/root";
+@import "./base/variables";
+@import "./componentes/header";
+@import "./paginas/index";
+@import "./paginas/itemsyskills";
+@import "./paginas/tienda";
+@import "./paginas/contacto";
+@import "./paginas/aboutus";
+@import "./componentes/footer";
 /* ------------ ANIMACIONES y TRANSFORMACIONES --------------- */
 .sectionLista div img{
     -webkit-transition: 0.5s linear;
@@ -196,25 +150,22 @@ section img{
 }
 @media screen and (max-width: 700px){
     .gridContainer {
-        grid-template-rows: 0.2fr 7fr 0.5fr; 
+        grid-template-rows: 0.2fr 6fr 0.5fr; 
     }
     .sectionIndexOne h1{
         font-size: 30px;
         letter-spacing: 2px;
         font-weight: 300;
     }
-    .separadorGrande{
-        width: 500px;
-    }
 }
 @media screen and (max-width: 534px){
     .gridContainer {
-        grid-template-rows: 0.2fr 8fr 0.6fr; 
+        grid-template-rows: 0.2fr 6fr 0.6fr; 
     }
 }
 @media screen and (max-width: 496px){
     .gridContainer {
-        grid-template-rows: 0.3fr 9fr 0.6fr; 
+        grid-template-rows: 0.3fr 6fr 0.6fr; 
     }
     .separadorGrande{
         width: 300px;

@@ -1,0 +1,65 @@
+/* ITEMS y SKILLS */
+.items{
+    div{
+        h1{
+            font-size: 60px;
+            font-family: $font;
+            letter-spacing: 5px;
+            font-weight: 800;
+            color: $color;
+            text-transform: uppercase;
+            text-shadow: $shadow;
+        }
+    }
+    h2{
+        font-size: 40px;
+        font-family: $font;
+        letter-spacing: 4px;
+        font-weight: 600;
+        color: $color;
+        text-transform: uppercase;
+        text-shadow: $shadow;
+    }
+    h3{
+        font-size: 30px;
+        font-family: $font;
+        letter-spacing: 3px;
+        font-weight: 500;
+        color: $color;
+        text-transform: uppercase;
+        text-shadow: $shadow;
+    }
+    ul{
+        columns: 2;
+        list-style-type: none;
+        margin-left: 30%;
+        li{
+            a{
+                text-decoration: none;
+                color: $color;
+                font-family: $font;
+                &:hover{
+                    background-color: #fc7363;
+                }
+                &:visited{
+                    color: purple;
+                }
+            }
+        }
+    }
+    p{
+        margin: auto 50px;
+    }
+    .separadorGrande{
+        width: $separador;
+        margin: 20px auto;
+        border: none;
+        border-bottom: 3px solid $color;
+    }
+    .separadorChico{
+        width: $separador/4;
+        margin: 20px auto;
+        border: none;
+        border-bottom: 2px solid $color;
+    }
+}
