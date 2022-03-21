@@ -2,21 +2,21 @@
 .header{
     grid-area: header;
     .navbar{
-        font-size: 20px;
+        font-size: 16px;
         letter-spacing: 3px;
         color: #fadecfee;
         font-family: "Radiance","Noto Sans",sans-serif;
         a{
             img{
-                height: 20%;
-                width: 20%;
-                margin-left: 20px;
+                height: 16%;
+                width: 16%;
+                margin-left: 16px;
             }
         }
         ul{
             li{
-                padding-right: 40px;
-                margin-right: 20px;
+                padding-right: 26px;
+                margin-right: 16px;
                 text-transform: uppercase;
                 font-weight: 500;
                 a{

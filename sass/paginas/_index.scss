@@ -5,6 +5,7 @@
     background-repeat:no-repeat;
     background-position: center center;
     background-attachment: fixed;
+    margin: 0px 20px 10px 20px
 }
 .card{
     @include size (50rem, 0px);
@@ -52,6 +53,7 @@
     background-repeat:no-repeat;
     background-position: center center;
     background-attachment: fixed;
+    margin: 0px 20px;
     h3{
         font-size: 42px;
         font-family: $font;
