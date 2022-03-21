@@ -181,10 +181,10 @@
     .items ul{
         margin-left: 20px
     }
-}
-.sectionIndexOne div img, .sectionIndexTwo div img{
-    width: 50%;
-    margin: 5px auto;
+    .sectionIndexOne div img, .sectionIndexTwo div img{
+        width: 50%;
+        margin: 5px auto;
+    }
 }
 @media screen and (max-width: 496px){
     .gridContainer {
