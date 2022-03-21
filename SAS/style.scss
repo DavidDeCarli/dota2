@@ -77,11 +77,27 @@
 /* ------------ MEDIA QUERIES --------------- */
 @media screen and (max-width: 1000px){
     .gridContainer {
-        grid-template-rows: 0.2fr 6fr 0.6fr; 
+        grid-template-rows: 0.2fr auto 0.6fr;
     }
-    .navbar-nav{
-        display: flex;
-        flex-direction: column;
+    .header{
+        .navbar{
+            a{
+                img{
+                    margin-left: 50px;
+                }
+            }
+            ul{
+                li{
+                    padding-right: 0px;
+                    margin-right: 0px;
+                    text-align: center;
+                }
+            }
+        }
+        .navbar-nav{
+            display: flex;
+            flex-direction: column;
+        }
     }
     .container-fluid{
     display: flex;
@@ -150,7 +166,7 @@
 }
 @media screen and (max-width: 700px){
     .gridContainer {
-        grid-template-rows: 0.2fr 6fr 0.5fr; 
+        grid-template-rows: 0.2fr auto 0.5fr; 
     }
     .sectionIndexOne h1{
         font-size: 30px;
@@ -160,12 +176,19 @@
 }
 @media screen and (max-width: 534px){
     .gridContainer {
-        grid-template-rows: 0.2fr 6fr 0.6fr; 
+        grid-template-rows: 0.2fr auto 0.6fr; 
     }
+    .items ul{
+        margin-left: 20px
+    }
+}
+.sectionIndexOne div img, .sectionIndexTwo div img{
+    width: 50%;
+    margin: 5px auto;
 }
 @media screen and (max-width: 496px){
     .gridContainer {
-        grid-template-rows: 0.3fr 6fr 0.6fr; 
+        grid-template-rows: 0.3fr auto 0.6fr; 
     }
     .separadorGrande{
         width: 300px;

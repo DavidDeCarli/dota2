@@ -1,6 +1,6 @@
 /* INDEX */
 .sectionIndexOne{
-    background-image: url("/images/dota2-mapa.png");
+    background-image: url("/images/mapa.jpg");
     background-size: cover;
     background-repeat:no-repeat;
     background-position: center center;
@@ -47,7 +47,7 @@
     font-weight: 200;
 }
 .sectionIndexTwo{
-    background-image: url("/images/dota2-heroes.jpg");
+    background-image: url("/images/roshan.jpg");
     background-size: cover;
     background-repeat:no-repeat;
     background-position: center center;
@@ -63,7 +63,7 @@
     }
 }
 .sectionIndexThree{
-    background-image: url("/images/prueba.jpg");
+    background-image: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//home/background4.png");
     margin: 50px 20px;
     background-size: cover;
     background-repeat:no-repeat;
@@ -76,9 +76,18 @@
     text-align: left;
     background-color: transparent;
 }
+.sectionIndexFour{
+    background-image: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//home/dpc.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    margin: 5px 20px;
+}
 .list-group-item{
-    background-color: rgb(150, 150, 150);
+    background-color: transparent;
     margin: auto 10%;
+    color: wheat;
 }
 .sectionLista{
     display: flex;

@@ -1,7 +1,17 @@
 <h1 align="center">Hi 👋, I'm David De Carli</h1>
 <h3 align="center">Web development</h3>
 
+- 🔭 I’m currently working on [Dota 2](https://github.com/DavidDeCarli/dota2)
+
+- 🌱 I’m currently learning **SAS and SEO**
+
+- 👨‍💻 All of my projects are available at [https://adoring-meitner-d7b762.netlify.app/index.html](https://adoring-meitner-d7b762.netlify.app/index.html)
+
+- 💬 Ask me about **video games**
+
 - 📫 How to reach me **josedaviddc@gmail.com**
+
+- ⚡ Fun fact **When i play Dota 2 with my friends we always lose.**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">

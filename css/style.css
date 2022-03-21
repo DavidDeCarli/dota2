@@ -95,7 +95,7 @@ section img {
 
 /* INDEX */
 .sectionIndexOne {
-  background-image: url("/images/dota2-mapa.png");
+  background-image: url("/images/mapa.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -142,7 +142,7 @@ section img {
   font-weight: 200; }
 
 .sectionIndexTwo {
-  background-image: url("/images/dota2-heroes.jpg");
+  background-image: url("/images/roshan.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -157,7 +157,7 @@ section img {
     text-shadow: 0px 0px 20px #000; }
 
 .sectionIndexThree {
-  background-image: url("/images/prueba.jpg");
+  background-image: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//home/background4.png");
   margin: 50px 20px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -171,9 +171,18 @@ section img {
   text-align: left;
   background-color: transparent; }
 
+.sectionIndexFour {
+  background-image: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//home/dpc.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  margin: 5px 20px; }
+
 .list-group-item {
-  background-color: #969696;
-  margin: auto 10%; }
+  background-color: transparent;
+  margin: auto 10%;
+  color: wheat; }
 
 .sectionLista {
   display: flex;
@@ -244,6 +253,13 @@ section img {
   border-bottom: 2px solid #fadecfee; }
 
 /* TIENDA */
+.tiendaOnline {
+  background-image: url("/images/comerciante-dota2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed; }
+
 .table {
   display: flex;
   justify-content: center; }
@@ -265,7 +281,12 @@ section img {
 
 /* CONTACTO */
 .contacto {
-  margin: auto 50px;
+  background-image: url("/images/Dota-2-fondo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  margin: auto 60px;
   padding: 10px 20px; }
   .contacto h1 {
     text-align: left; }
@@ -426,8 +447,14 @@ section img {
 /* ------------ MEDIA QUERIES --------------- */
 @media screen and (max-width: 1000px) {
   .gridContainer {
-    grid-template-rows: 0.2fr 6fr 0.6fr; }
-  .navbar-nav {
+    grid-template-rows: 0.2fr auto 0.6fr; }
+  .header .navbar a img {
+    margin-left: 50px; }
+  .header .navbar ul li {
+    padding-right: 0px;
+    margin-right: 0px;
+    text-align: center; }
+  .header .navbar-nav {
     display: flex;
     flex-direction: column; }
   .container-fluid {
@@ -481,7 +508,7 @@ section img {
 
 @media screen and (max-width: 700px) {
   .gridContainer {
-    grid-template-rows: 0.2fr 6fr 0.5fr; }
+    grid-template-rows: 0.2fr auto 0.5fr; }
   .sectionIndexOne h1 {
     font-size: 30px;
     letter-spacing: 2px;
@@ -489,10 +516,16 @@ section img {
 
 @media screen and (max-width: 534px) {
   .gridContainer {
-    grid-template-rows: 0.2fr 6fr 0.6fr; } }
+    grid-template-rows: 0.2fr auto 0.6fr; }
+  .items ul {
+    margin-left: 20px; } }
+
+.sectionIndexOne div img, .sectionIndexTwo div img {
+  width: 50%;
+  margin: 5px auto; }
 
 @media screen and (max-width: 496px) {
   .gridContainer {
-    grid-template-rows: 0.3fr 6fr 0.6fr; }
+    grid-template-rows: 0.3fr auto 0.6fr; }
   .separadorGrande {
     width: 300px; } }

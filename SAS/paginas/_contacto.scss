@@ -1,6 +1,11 @@
 /* CONTACTO */
 .contacto{
-    margin: auto 50px;
+    background-image: url("/images/Dota-2-fondo.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    margin: auto 60px;
     padding: 10px 20px;
     h1{
         text-align: left;

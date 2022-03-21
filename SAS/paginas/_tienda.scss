@@ -1,4 +1,11 @@
 /* TIENDA */
+.tiendaOnline{
+    background-image: url("/images/comerciante-dota2.png");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
 .table{
     display: flex;
     justify-content: center;
