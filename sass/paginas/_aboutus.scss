@@ -24,6 +24,17 @@
             }
         }
     }
+    .row{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        div{
+            div{
+                text-transform: uppercase;
+            }
+        }
+    }
 }
 .videoAboutUs{
     display: flex;
