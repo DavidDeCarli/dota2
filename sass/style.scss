@@ -112,8 +112,10 @@
         width: 70%;
         margin: 10px auto;
     }
-    .separadorGrande{
-        width: 600px;
+    .items{
+        .separadorGrande{
+            width: 600px;
+        }
     }
     .videoAboutUs{
         display: block;
@@ -160,8 +162,13 @@
     .sectionIndexOne p{
         font-size: 20px;
     }
-    .separadorGrande{
-        width: 500px;
+    .items{
+        .separadorGrande{
+            width: 400px;
+        }
+    }
+    .contacto{
+        margin: auto 5px;
     }
 }
 @media screen and (max-width: 700px){
@@ -169,28 +176,182 @@
         grid-template-rows: 0.2fr auto 0.5fr; 
     }
     .sectionIndexOne h1{
-        font-size: 30px;
+        font-size: 50px;
         letter-spacing: 2px;
-        font-weight: 300;
+        font-weight: 500;
+    }
+    .sectionAboutus{
+        ul{
+            li{
+                a{
+                    img{
+                        width: 250px;
+                        height: 250px;
+                    }
+                }
+            }
+        }
     }
 }
-@media screen and (max-width: 534px){
+@media screen and (max-width: 550px){
     .gridContainer {
         grid-template-rows: 0.2fr auto 0.6fr; 
     }
-    .items ul{
-        margin-left: 20px
+    .sectionIndexOne, .sectionIndexTwo, .sectionIndexThree{
+        margin: 0px 5px 10px 5px
     }
     .sectionIndexOne div img, .sectionIndexTwo div img{
-        width: 50%;
+        width: 18rem;
         margin: 5px auto;
+    }
+    .card{
+        @include size (18rem, 0px);
+        img{
+            width: 18rem;
+        }
+    }
+    .titulo{
+        font-size: 20px;
+        font-weight: 200;
+    }
+    .sectionIndexOne h2, .sectionIndexTwo h2, .sectionIndexThree h2{
+        font-size: 30px;
+        font-weight: 400;
+    }
+    .sectionIndexTwo{
+        h3{
+            font-size: 30px;
+            letter-spacing: 2px;
+            font-weight: 400;
+        }
+    }
+    .sectionIndexOne span, .sectionIndexTwo span, .sectionIndexThree span{
+        font-size: 40px;
+        letter-spacing: 2px;
+        font-weight: 400;
+    }
+    .sectionIndexOne p, .sectionIndexTwo p{
+        font-size: 10px;
+        font-weight: 100;
+    }
+    .sectionIndexOne div p, .sectionIndexTwo div p{
+        text-align: left;
+        margin: 30px 20px 0 5px;
+        font-size: 20px;
+        font-weight: 200;
+    }
+    .items ul{
+        margin-left: 20px
     }
 }
 @media screen and (max-width: 496px){
     .gridContainer {
         grid-template-rows: 0.3fr auto 0.6fr; 
     }
-    .separadorGrande{
-        width: 300px;
+    .items{
+        .separadorGrande{
+            width: 200px;
+        }
+    }
+    .contacto{
+        padding: 5px 10px;
+        h1{
+            font-size: 40px;
+        }
+    }
+    .footer{
+        padding: 10px 10px 0 10px;
+        .footerLogo{
+            img{
+                height: 50px;
+            }
+            p{
+                width: 400px;
+            }
+        }
+        .footerRedes{
+            a img{
+                margin: 0px 30px 30px 30px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 420px){
+    .sectionIndexOne h1{
+        font-size: 26px;
+        letter-spacing: 2px;
+        font-weight: 250;
+    }
+    .sectionIndexOne div img, .sectionIndexTwo div img{
+        width: 16rem;
+    }
+    .items{
+        div{
+            h1{
+                font-size: 50px;
+                letter-spacing: 4px;
+                font-weight: 600;
+            }
+        }
+        h2{
+            font-size: 30px;
+            letter-spacing: 3px;
+            font-weight: 500;
+        }
+        h3{
+            font-size: 20px;
+            letter-spacing: 2px;
+            font-weight: 400;
+        }
+        p{
+            margin: auto 10px;
+        }
+        .separadorGrande{
+            width: $separador/4;
+            margin: 10px auto;
+            border-bottom: 3px;
+        }
+        .separadorChico{
+            width: $separador/5;
+            margin: 10px auto;
+            border-bottom: 2px;
+        }
+        ul{
+            margin-left: 10px
+        }
+    }
+    .sectionAboutus{
+        h1{
+            font-size: 50px;
+        }
+        ul{
+            li{
+                a{
+                    img{
+                        width: 200px;
+                        height: 200px;
+                    }
+                }
+            }
+        }
+        .videoAboutUs video{
+            width: 250px;
+            margin: 10px auto;
+        }
+    }
+    .footer{
+        .footerLogo{
+            img{
+                height: 50px;
+            }
+            p{
+                width: 280px;
+            }
+        }
+        .footerRedes{
+            a img{
+                margin: 0px 20px 20px 20px;
+            }
+        }
     }
 }
