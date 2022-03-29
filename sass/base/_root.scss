@@ -37,6 +37,10 @@ section img{
     width: 50%;
     margin: 10px auto;
 }
+.col-6 {
+    flex: 0 0 auto;
+    width: 100%;
+}
 .gridContainer {
     display: grid; 
     grid-template-columns: 1fr 1fr; 

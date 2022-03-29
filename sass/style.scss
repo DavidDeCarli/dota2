@@ -143,6 +143,9 @@
     }
 }
 @media screen and (max-width: 850px) {
+    section img{
+        width: 70%;
+    }
     .card{
         width: 30rem;
     }
@@ -210,6 +213,9 @@
             width: 18rem;
         }
     }
+    .cardSectionIndexThree, .cardSectionIndexThree .titulo{
+        width: 18rem;
+    }
     .titulo{
         font-size: 20px;
         font-weight: 200;
@@ -240,23 +246,14 @@
         font-size: 20px;
         font-weight: 200;
     }
-    .items ul{
-        margin-left: 20px
-    }
-}
-@media screen and (max-width: 496px){
-    .gridContainer {
-        grid-template-rows: 0.3fr auto 0.6fr; 
-    }
     .items{
-        .separadorGrande{
-            width: 200px;
+        .sectionLista{
+            div{
+                padding: 10px 50px;
+            }
         }
-    }
-    .contacto{
-        padding: 5px 10px;
-        h1{
-            font-size: 40px;
+        ul{
+            margin-left: 20px
         }
     }
     .footer{
@@ -276,13 +273,32 @@
         }
     }
 }
-@media screen and (max-width: 420px){
+@media screen and (max-width: 496px){
+    .gridContainer {
+        grid-template-rows: 0.3fr auto 0.6fr; 
+    }
     .sectionIndexOne h1{
         font-size: 26px;
         letter-spacing: 2px;
         font-weight: 250;
     }
+    .items{
+        .separadorGrande{
+            width: 200px;
+        }
+    }
+    .contacto{
+        padding: 5px 10px;
+        h1{
+            font-size: 40px;
+        }
+    }
+}
+@media screen and (max-width: 420px){
     .sectionIndexOne div img, .sectionIndexTwo div img{
+        width: 16rem;
+    }
+    .cardSectionIndexThree, .cardSectionIndexThree .titulo{
         width: 16rem;
     }
     .items{
@@ -304,7 +320,7 @@
             font-weight: 400;
         }
         p{
-            margin: auto 10px;
+            margin: auto 5px;
         }
         .separadorGrande{
             width: $separador/4;
@@ -317,7 +333,19 @@
             border-bottom: 2px;
         }
         ul{
-            margin-left: 10px
+            margin-left: 5px
+        }
+    }
+    .tienda{
+        .table{
+            tr{
+                th{
+                    font-size: 16px;
+                }
+                td{
+                    font-size: 12px;
+                }
+            }
         }
     }
     .sectionAboutus{

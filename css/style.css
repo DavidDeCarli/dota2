@@ -35,6 +35,10 @@ section img {
   width: 50%;
   margin: 10px auto; }
 
+.col-6 {
+  flex: 0 0 auto;
+  width: 100%; }
+
 .gridContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -256,7 +260,7 @@ section img {
 
 /* TIENDA */
 .tiendaOnline {
-  background-image: url("/images/comerciante-dota2.png");
+  background-image: url("/images/tienda.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -499,6 +503,8 @@ section img {
     line-height: 0px; } }
 
 @media screen and (max-width: 850px) {
+  section img {
+    width: 70%; }
   .card {
     width: 30rem; }
   .card img {
@@ -542,6 +548,8 @@ section img {
     border: 0px; }
     .card img {
       width: 18rem; }
+  .cardSectionIndexThree, .cardSectionIndexThree .titulo, .cardSectionIndexThree .sectionIndexOne h2, .sectionIndexOne .cardSectionIndexThree h2, .cardSectionIndexThree .sectionIndexTwo h2, .sectionIndexTwo .cardSectionIndexThree h2, .cardSectionIndexThree .sectionIndexThree h2, .sectionIndexThree .cardSectionIndexThree h2 {
+    width: 18rem; }
   .titulo, .sectionIndexOne h2, .sectionIndexTwo h2, .sectionIndexThree h2 {
     font-size: 20px;
     font-weight: 200; }
@@ -564,18 +572,10 @@ section img {
     margin: 30px 20px 0 5px;
     font-size: 20px;
     font-weight: 200; }
+  .items .sectionLista div {
+    padding: 10px 50px; }
   .items ul {
-    margin-left: 20px; } }
-
-@media screen and (max-width: 496px) {
-  .gridContainer {
-    grid-template-rows: 0.3fr auto 0.6fr; }
-  .items .separadorGrande {
-    width: 200px; }
-  .contacto {
-    padding: 5px 10px; }
-    .contacto h1 {
-      font-size: 40px; }
+    margin-left: 20px; }
   .footer {
     padding: 10px 10px 0 10px; }
     .footer .footerLogo img {
@@ -585,12 +585,24 @@ section img {
     .footer .footerRedes a img {
       margin: 0px 30px 30px 30px; } }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 496px) {
+  .gridContainer {
+    grid-template-rows: 0.3fr auto 0.6fr; }
   .sectionIndexOne h1 {
     font-size: 26px;
     letter-spacing: 2px;
     font-weight: 250; }
+  .items .separadorGrande {
+    width: 200px; }
+  .contacto {
+    padding: 5px 10px; }
+    .contacto h1 {
+      font-size: 40px; } }
+
+@media screen and (max-width: 420px) {
   .sectionIndexOne div img, .sectionIndexTwo div img {
+    width: 16rem; }
+  .cardSectionIndexThree, .cardSectionIndexThree .titulo, .cardSectionIndexThree .sectionIndexOne h2, .sectionIndexOne .cardSectionIndexThree h2, .cardSectionIndexThree .sectionIndexTwo h2, .sectionIndexTwo .cardSectionIndexThree h2, .cardSectionIndexThree .sectionIndexThree h2, .sectionIndexThree .cardSectionIndexThree h2 {
     width: 16rem; }
   .items div h1 {
     font-size: 50px;
@@ -605,7 +617,7 @@ section img {
     letter-spacing: 2px;
     font-weight: 400; }
   .items p {
-    margin: auto 10px; }
+    margin: auto 5px; }
   .items .separadorGrande {
     width: 200px;
     margin: 10px auto;
@@ -615,7 +627,11 @@ section img {
     margin: 10px auto;
     border-bottom: 2px; }
   .items ul {
-    margin-left: 10px; }
+    margin-left: 5px; }
+  .tienda .table tr th {
+    font-size: 16px; }
+  .tienda .table tr td {
+    font-size: 12px; }
   .sectionAboutus h1 {
     font-size: 50px; }
   .sectionAboutus ul li a img {
